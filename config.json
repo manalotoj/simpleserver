@@ -1,0 +1,14 @@
+{
+	"logging" : {
+		"directory" : "./logs"
+	},
+	"oauthWrapRequest" : {
+		"url":"",
+		"creds":{"uid":"", "pwd":""},
+		"wrapScope":""
+	},
+	"svApi" : {
+		"rootUrl" : ""
+	},
+	"outputDir" : "./target"	
+}
