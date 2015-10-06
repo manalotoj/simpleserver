@@ -30,7 +30,7 @@ logger = new( winston.Logger )( {
 		} ),
 		new winston.transports.File( {
 			level: env === 'development' ? 'debug' : 'info',
-			filename: logDir + '/process.log',
+			filename: logDir + '/logs.log',
 			maxsize: 1024 * 1024 * 10,
 			prettyPrint: true
 		} )
@@ -38,7 +38,7 @@ logger = new( winston.Logger )( {
     handleExceptions: true,
 	exceptionHandlers: [
 		new winston.transports.File( {
-			filename: logDir + '/error.log',
+			filename: logDir + '/errors.log',
 			maxsize: 1024 * 1024 * 10,
 			prettyPrint: true
 		} )

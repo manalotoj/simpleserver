@@ -10,5 +10,16 @@
 	"svApi" : {
 		"rootUrl" : ""
 	},
-	"outputDir" : "./target"	
+	"conn" : "mongodb://localhost:27017/sv-event-notifications",
+	"outputDir" : "./target",
+	"server" : {
+		"port" : "3000",
+		"timeout" : "120000"
+	},
+	"queueing" : {
+		"maxRetries" : "5",
+		"visibility" : "30",
+		"queueName" : "queue",
+		"deadQueueName" : "deadQueue"
+	}	
 }
